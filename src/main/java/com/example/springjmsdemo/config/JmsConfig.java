@@ -9,6 +9,8 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JmsConfig {
 
+    public static final String MY_QUEUE = "Greetings!";
+
     @Bean
     public MessageConverter messageConverter(){
         // utilise the Jackson JSON library
