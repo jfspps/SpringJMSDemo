@@ -9,7 +9,8 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JmsConfig {
 
-    public static final String MY_QUEUE = "Greetings!";
+    // a queue is a destination point for JmsConfig; only one listener can receive a message stored in the queue
+    public static final String MY_QUEUE = "The Greetings queue";
 
     @Bean
     public MessageConverter messageConverter(){

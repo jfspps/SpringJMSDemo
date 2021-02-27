@@ -29,6 +29,7 @@ public class SendersMessage {
                 .message("Howdy!")
                 .build();
 
+        // send message to the queue named MY_QUEUE (see MessageListener class)
         jmsTemplate.convertAndSend(JmsConfig.MY_QUEUE, message);
 
         System.out.println("Message sent");
