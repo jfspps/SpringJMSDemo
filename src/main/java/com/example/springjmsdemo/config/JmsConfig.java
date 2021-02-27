@@ -12,6 +12,8 @@ public class JmsConfig {
     // a queue is a destination point for JmsConfig; only one listener can receive a message stored in the queue
     public static final String MY_QUEUE = "The Greetings queue";
 
+    public static final String SEND_RECEIVE_QUEUE = "Send and receive queue";
+
     @Bean
     public MessageConverter messageConverter(){
         // utilise the Jackson JSON library
